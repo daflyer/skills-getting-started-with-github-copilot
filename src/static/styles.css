@@ -159,11 +159,37 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
   margin-bottom: 0;
   color: #333;
   font-size: 15px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  background: rgba(198,40,40,0.08);
 }
 
 .no-participants {
